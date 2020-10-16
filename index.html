@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 801px)"href="entryPage.css">
+    <link rel="stylesheet" media="screen and (max-width: 800px)" href="entryPageMobile.css">
+    
+    <!-- <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather" /> -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="HAVE A GOOD DAY!!"
+    />
+    <title>Sofya Kolodizner</title>
+  </head>
+
+
+  
+  <body id="body">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div style='padding-top: 50px;'></div>
+    <div id="root">
+    <!-- <div class="imDiv"></div> -->
+      <div class="nameDiv"><img class="imgSofa" src="Sofa3.png" alt="Sofa image">
+        <div class = 'name'>Sofya Kolodizner</div>
+        <div class ="prof">Fullstack developer</div>
+        <div class ="mail">simalda83@gmail.com</div>
+      </div>
+    </div>
+
+    <div class="desc" style="padding: 1vw;">Hello! My name is Sofa.  I have Ms. degree in math, some courses in computer science and a lot of passion to be integrated in software world as full stack developer. 
+      Also I made projects that you can see below.  Feel free to go over :)
+    </div>
+
+    <div class="sepLine"></div>
+    <div class="oneProject" >
+            <div class="slideShowOdd">
+        <div class="mySlides0">
+            <img class="mainImage" src="images/png/Quiz/1b.png">
+        </div>
+        <div class="mySlides0">
+            <img class="mainImage" src="images/png/Quiz/2.png" style="width:100%">
+        </div>
+        <div class="mySlides0">
+            <img class="mainImage" src="images/png/Quiz/3.png" style="width:100%">
+        </div>
+        <div class="mySlides0">
+            <img class="mainImage" src="images/png/Quiz/4.png" style="width:100%">
+        </div>
+        <div class="mySlides0">
+            <img class="mainImage" src="images/png/Quiz/5.png" style="width:100%">
+        </div>
+        <div class="mySlides0">
+            <img class="mainImage" src="images/png/Quiz/6.png" style="width:100%">
+        </div>
+        <div class="row">
+          <div class="column">
+            <img class="demo0 cursor" src="images/png/Quiz/1b.png"  onclick="currentSlide(1,'mySlides0','demo0')" alt="QUIZ">
+          </div>
+          <div class="column">
+            <img class="demo0 cursor" src="images/png/Quiz/2.png"   onclick="currentSlide(2,'mySlides0','demo0')" alt="Quiz step">
+          </div>    
+          <div class="column">
+            <img class="demo0 cursor" src="images/png/Quiz/3.png" onclick="currentSlide(3,'mySlides0','demo0')" alt="Quiz step">
+          </div> 
+          <div class="column">
+            <img class="demo0 cursor" src="images/png/Quiz/4.png"  onclick="currentSlide(4,'mySlides0','demo0')" alt="Quiz step">
+          </div> 
+          <div class="column">
+            <img class="demo0 cursor" src="images/png/Quiz/5.png" onclick="currentSlide(5,'mySlides0','demo0')" alt="Quiz step">
+          </div>
+          <div class="column">
+            <img class="demo0 cursor" src="images/png/Quiz/6.png"  onclick="currentSlide(6,'mySlides0','demo0')" alt="Quiz step">
+          </div>
+      </div>
+      </div>
+         
+        <div class="descriptionOdd">
+          <div class=""> <h2>QuizIt</h2></div>
+          <div class="desc"> <span> Online quizes.
+            Client can choose   language: Python, React, SQL  etc and choose number of questions in quiz.
+            All quizes i met in past looked like this: if it same quiz, then there same questions and same options for answers. 
+            In my design even if it quiz of the same language, client will get randomly peak uped questions from DB. 
+            Even if question apeared again it may apear with different options for answers. 
+          This is because I have more that 3 possible wrong answers that shoffled any time this question choosen for quiz.</span></div>
+          <div class="technologiesName"> <span class="fieldName">Technologies:</span>
+            <ul >
+              <li>Backend: Python, Flask </li> 
+              <li>Frontend: JS, React.js, redux, CSS grid </li>
+              <li>Database: Microsoft SQL  </li></ul></div>
+          <div class="field"> <span><a href="https://github.com/simalda/Quiz" target="blank">On Github</a> </span></span></div>
+        </div>
+    </div>    
+<div class="sepLine"></div>
+    <div class="oneProject" >
+    
+        <div class="descriptionEven">
+          <div class=""> <h2>Ping Managment</h2></div> 
+          <div class="desc"> <span>System to manage computers connection. The system reflect ping values on graph and show which computers are disconnected from internet.
+  
+            System gets from every computer request with ping value , if there not request from some compuret for 4*requestInterval time then computer displayed as disconnected.</span></div>
+          <div class="technologiesName"> <span class="fieldName">Technologies:</span>
+            <ul >
+            <li>Backend: Python, Flask </li> 
+            <li>Frontend:  React.js, WEB(JS, HTML, CSS)</li>
+            <li>Database: mySQL   </li></ul></div>
+        <div class="field"> <span><a href="https://github.com/simalda/pingManagement" target="blank">On Github</a> </span></span></div>
+        </div>
+        <div class="slideShowEven">
+          <div class="mySlides1">
+              <img class="mainImage" src="images/PingManagment/hourIm.jpg">
+          </div>
+          <div class="mySlides1">
+              <img class="mainImage" src="images/PingManagment/deleteReport.jpg" style="width:100%">
+          </div>
+          <div class="mySlides1">
+              <img class="mainImage" src="images/PingManagment/sortedName.jpg" style="width:100%">
+          </div>
+          <div class="mySlides1">
+              <img class="mainImage" src="images/PingManagment/hoverBullet.jpg" style="width:100%">
+          </div>
+          <div class="mySlides1">
+              <img class="mainImage" src="images/Quiz/5.jpg" style="width:100%">
+          </div>
+          <div class="mySlides1">
+              <img class="mainImage" src="images/Quiz/6.jpg" style="width:100%">
+          </div>
+          <div class="row rowEven">
+            <div class="column">
+              <img class="demo1 cursor" src="images/PingManagment/hourIm.jpg"   onclick="currentSlide(1,'mySlides1','demo1')" alt="QUIZ">
+            </div>
+            <div class="column">
+              <img class="demo1 cursor" src="images/PingManagment/deleteReport.jpg"   onclick="currentSlide(2,'mySlides1','demo1')" alt="Quiz step">
+            </div>    
+            <div class="column">
+              <img class="demo1 cursor" src="images/PingManagment/sortedName.jpg"   onclick="currentSlide(3,'mySlides1','demo1')" alt="Quiz step">
+            </div> 
+            <div class="column">
+              <img class="demo1 cursor" src="images/PingManagment/hoverBullet.jpg"   onclick="currentSlide(4,'mySlides1','demo1')" alt="Quiz step">
+            </div> 
+          
+            
+        
+          </div>
+        </div>
+       
+    </div>   
+
+    <div class="sepLine"></div>
+    <div class="oneProject" >
+      <div class="slideShowOdd">
+        <div class="mySlides2">
+            <img class="mainImage" src="images/Sudoku/1.jpg">
+        </div>
+        <div class="mySlides2">
+            <img class="mainImage" src="images/Sudoku/2.jpg" style="width:100%">
+        </div>
+        <div class="mySlides2">
+            <img class="mainImage" src="images/Sudoku/3.jpg" style="width:100%">
+        </div>
+        <div class="mySlides2">
+            <img class="mainImage" src="images/Sudoku/4.jpg" style="width:100%">
+        </div>
+         
+        <div class="row">
+          <div class="column">
+            <img class="demo0 cursor" src="images/Sudoku/1.jpg"  onclick="currentSlide(1,'mySlides2','demo2')" alt="QUIZ">
+          </div>
+          <div class="column">
+            <img class="demo0 cursor" src="images/Sudoku/2.jpg"   onclick="currentSlide(2,'mySlides2','demo2')" alt="Quiz step">
+          </div>    
+          <div class="column">
+            <img class="demo0 cursor" src="images/Sudoku/3.jpg"  onclick="currentSlide(3,'mySlides2','demo2')" alt="Quiz step">
+          </div> 
+          <div class="column">
+            <img class="demo0 cursor" src="images/Sudoku/4.jpg"  onclick="currentSlide(4,'mySlides2','demo2')" alt="Quiz step">
+          </div> 
+         
+      </div>
+    </div>
+        <div class="descriptionOdd">
+          <div class="field"> <h2>Sudoku</h2></div> 
+          <div class="field desc"> <span> Sudoku game. Create new combination every time "New game" called by backtracking algorithm.</span></div>
+          <div class="technologiesName"> <span class="fieldName">Technologies:</span>
+            <ul >
+              <li>Logic: Python</li> 
+              <li>GUI: Tkinter </li>
+               </ul></div>
+          <div class="field"> <span><a href="https://github.com/simalda/Sudoku_Solver" target="blank">On Github</a> </span></span></div>
+        </div>
+    </div>    
+
+    <div id="coverScreen" class="coverScreen"></div>
+ 
+ 
+ 
+<!--   
+  <div class="top">   -->
+  <!-- <span ><a href="#root">Top</a></span></div> -->
+  
+ 
+  </body>
+  
+    <script src="JS/imageSlideShow.js"></script>
+
+</html>
