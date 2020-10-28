@@ -12,6 +12,10 @@
     background-color: #eaeded;
   }
   
+  .social{
+    width: 1em;
+    height: 1em;
+   }
    
    
   h4, h2{
@@ -27,7 +31,7 @@
   }
   
   .imgSofa {
-    width: 30%;
+    width: 70%;
     /* margin-left: 10%; */
     border: #444 1px solid;
     border-radius: 50%;
@@ -46,17 +50,17 @@
     margin: auto;
   }
   .name {
-    font-size: 3vw;
+    font-size: 1em;
     font-family: Merriweather;
     display: inline;
     vertical-align: top;
   }
   .prof{
-    font-size: 2vw;
+    font-size: 0.5em;
   }
   .sepLine{
     height: 3px;
-    background-color: #008b8b4a;
+    background-color: #efd3d7;
   }
   .descriptionOdd {
     padding-top: 10px;
@@ -97,6 +101,8 @@
     align-content: center;
     display: flex;
     flex-direction: column;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
   }
   
    
@@ -142,18 +148,17 @@
     opacity: 1;
   }
   
-  /* .mainImage:hover {
-    transition: z-index 0s 0s, transform 1.5s ease-in-out;
-    transform: scale(1.7);
-    z-index: 7;
-    opacity: 1;
-    height: auto;
-     } */
   
+  
+     ol{
+      text-align: left;
+      margin-top: 0px;
+    }
+
   .desc, li{
     font-family: "Roboto";
     font-weight: 400;
-    font-size: 0.7em;
+    font-size: 3vw;
   }
   .fieldName {
     font-weight: bold;
@@ -161,7 +166,7 @@
   }
   .technologiesName{
     margin-top: 15px;
-    font-size: 0.7em;
+    font-size: 1em;
     font-weight: bold;
     font-family: Merriweather;
   }
@@ -176,6 +181,7 @@
     font-size:0.7vw;
   } */
   a {
+    margin:1vw;
     color: #3b3db3;
   }
   
@@ -231,3 +237,29 @@
     font-size: 4vw;
     padding: 10px;
   }
+
+  
+/*-----------------------popup--------------------
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 50px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 2px 0;
+  position: absolute;
+  z-index: 1;   
+  left: 50%;
+  font-size:10px;
+  }
+
+ 
+
+/*   hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}

@@ -1,23 +1,40 @@
-@font-face {
+/* @font-face {
   font-family: Roboto;
   src: url(fonts/Roboto/Roboto-Regular.ttf);
 }
 @font-face {
   font-family: Merriweather;
   src: url(fonts/Merriweather/Merriweather-Regular.ttf);
+} */
+@font-face {
+  font-family: Roboto;
+  src: url(fonts/webfontkit-20201014-102642/roboto-regular-webfont.woff2);
 }
-
+@font-face {
+  font-family: Merriweather;
+  src: url(fonts/webfontkit-20201014-102642/merriweather-regular-webfont.woff2);
+}
 
 body {
   background-color: #eaeded;
+  display: flex;
+  flex-flow: column;
 }
 
- 
+ img{
+  image-rendering: crisp-edges;
+ }
+ .social{
+  width: 3em;
+  height: 3em;
+ }
  
 h4, h2{
-  font-family: Merriweather;
+  font-family: Merriweather, Arial, Helvetica, sans-serif;
   padding-top:0px;
   margin-top:0px;
+  margin-right: 15px;
+    display: inline;
 }
 
 #root{
@@ -34,6 +51,9 @@ h4, h2{
   padding: 5px;
 }
 
+.title{
+  margin-bottom: 20px;
+}
 .imDiv{
   width: 35%;
   display: flex;
@@ -46,17 +66,20 @@ h4, h2{
   margin: auto;
 }
 .name {
-  font-size: 3vw;
+  font-size: 3em;
   font-family: Merriweather;
-  /* text-shadow: 3px 3px #696666; */
   display: inline;
-  /* height: 40%; */
   vertical-align: top;
-  /* margin-left: 10%; */
+  margin-top: 0.3em;
 }
 .prof{
-  font-size: 2vw;
+  font-size: 2em;
   /* margin-left: 10%; */
+}
+.coverLetter{
+  margin-left: 10%;
+    padding-top: 1vw;
+    margin-right: 10%;
 }
 .mail{
   font-size: 1.5vw;
@@ -69,6 +92,7 @@ h4, h2{
   width: 40%;
   float: left;
   text-align: center;
+  padding-left:2em;
 }
 .descriptionEven {
   padding-top: 10px;
@@ -101,7 +125,7 @@ h4, h2{
 
 .oneProject {
   align-content: center;
-  height: 44vh;
+  /* height: 44vh; */
   padding-top: 1vw;
 }
 
@@ -164,9 +188,13 @@ h4, h2{
       /* transition: z-index 0s 0s, transform 1.5s ease-in-out; */
       transform: scale(1.5);}
   }
-
+  
+  ol{
+    text-align: left;
+    margin-top: 0px;
+  }
 .desc, li{
-  font-family: "Roboto";
+  font-family: Roboto;
   font-weight: 400;
   font-size: 1vw;
 }
@@ -190,12 +218,15 @@ h4, h2{
 }
  
 a {
+  margin:1vw;
   color: #3b3db3;
+  vertical-align: middle;
 }
 
 .sepLine{
   height: 3px;
   background-color: #efd3d7;
+  margin:1em;
 }
 
 
@@ -246,4 +277,28 @@ a {
   border-radius: 5px;
   text-align: center;
   padding: 10px;
+}
+
+/*-----------------------popup--------------------
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;   
+  left: 50%;
+  }
+
+ 
+
+/*   hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
 }
