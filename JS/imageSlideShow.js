@@ -1,6 +1,6 @@
  
 
-  const numOfProjects = 3
+  const numOfProjects = 4
   var slideIndex = 1;
   for(let j=0; j<numOfProjects; j++){    
     var cls = "mySlides"+j;
